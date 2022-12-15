@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/dist/style.css">
+
+</head>
+
+<body class="bg-very-dark-blue w-screen h-screen flex justify-center items-center">
+
+  <!-- Card -->
+  <main class="bg-dark-desaturated-blue rounded-md flex flex-col-reverse md:flex-row w-[380px] h-auto md:w-[1100px] md:h-[446px]">
+
+    <!-- Card content -->
+    <section class="flex flex-col px-8 py-10 md:px-14 md:py-16">
+      <!-- Title -->
+      <h1 class="px-4 md:px-0 text-center md:text-left text-white font-bold text-3xl md:text-4xl font-['Inter']">Get <span
+          class="text-soft-violet">insights</span> that help your business grow.</h1>
+
+      <!-- Text -->
+      <p class="text-center md:text-left font-['Inter'] text-slightly-transparent-white-1 mt-6 text-lg">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+
+      <!-- Stats container -->
+      <div class="flex flex-col items-center md:flex-row gap-6 md:gap-16 mt-10 md:mt-auto">
+
+        <!-- Stat 1 -->
+        <div class="flex flex-col gap-1">
+          <h2 class="text-center md:text-left first-letter:font-['Inter'] text-white font-bold text-2xl">10k+</h2>
+          <p class="text-center md:text-left first-letter:font-['Lexend_Deca'] uppercase text-slightly-transparent-white-2">companies</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="flex flex-col gap-1">
+          <h2 class="text-center md:text-left first-letter:font-['Inter'] text-white font-bold text-2xl">314</h2>
+          <p class="text-center md:text-left first-letter:font-['Lexend_Deca'] uppercase text-slightly-transparent-white-2">templates</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="flex flex-col gap-1">
+          <h2 class="text-center md:text-left first-letter:font-['Inter'] text-white font-bold text-2xl">12M+</h2>
+          <p class="text-center md:text-left first-letter:font-['Lexend_Deca'] uppercase text-slightly-transparent-white-2">queries</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image section -->
+    <!-- dimensions: 540px x 446px -->
+    <section class="h-full w-full relative rounded-t-lg md:rounded-r-lg">
+      <img class="hidden md:block h-full rounded-t-lg md:rounded-r-lg opacity-90" src="/images/image-header-desktop.jpg" alt="">
+      <img class="block md:hidden h-full rounded-t-lg md:rounded-r-lg opacity-90" src="/images/image-header-mobile.jpg" alt="">
+      <div class="rounded-r-lg bg-soft-violet absolute top-0 left-0 w-full h-full bg-opacity-60"></div>
+    </section>
+  
+  </main>
+
+</body>
+
+</html>
