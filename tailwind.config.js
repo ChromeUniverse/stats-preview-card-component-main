@@ -12,7 +12,12 @@ module.exports = {
       "slightly-transparent-white-1": "hsla(0, 0%, 100%, 0.75)",
       "slightly-transparent-white-2": "hsla(0, 0%, 100%, 0.6)",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        desktop: "url('/images/image-header-desktop.jpg')",
+        mobile: "url('/images/image-header-mobile.jpg')",
+      },
+    },
   },
   plugins: [],
 };
